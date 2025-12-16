@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Category" style="background-color: rgba(255, 255, 255, 0); width: auto; height: auto; flex-direction: row;">
+        <ui:VisualElement name="Icon" style="background-color: rgb(255, 0, 0); width: 10px; height: 10px; margin-right: 5px; margin-top: 2px;" />
+        <ui:Label text="Category" display-tooltip-when-elided="true" name="Text" style="max-height: none; min-height: auto; flex-direction: row; flex-grow: 1; -unity-text-align: upper-left; transform-origin: center; padding-right: 0; padding-left: 0; padding-top: 0; padding-bottom: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Template name="CompilerSettings" src="project://database/Packages/com.eldnach.shader-perf/Editor/Resources/CompilerSettings.uxml?fileID=9197481963319205126&amp;guid=541ff625585274d28a15c71ba4bc1f7c&amp;type=3#CompilerSettings" />
+    <ui:Template name="ShaderSettings" src="project://database/Packages/com.eldnach.shader-perf/Editor/Resources/ShaderSettings.uxml?fileID=9197481963319205126&amp;guid=31630e4bc98264c08a55d9c133eac4d7&amp;type=3#ShaderSettings" />
+    <ui:ScrollView>
+        <ui:Instance template="CompilerSettings" name="CompilerSettings" />
+        <ui:Instance template="ShaderSettings" name="ShaderSettings" />
+        <ui:VisualElement name="Compile" style="border-left-color: rgb(68, 68, 68); border-right-color: rgb(68, 68, 68); border-top-color: rgb(68, 68, 68); border-bottom-color: rgb(68, 68, 68); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px;">
+            <ui:Button text="Compile and Report" display-tooltip-when-elided="true" name="CompileButton" style="border-left-color: rgb(68, 68, 68); border-right-color: rgb(68, 68, 68); border-top-color: rgb(68, 68, 68); border-bottom-color: rgb(68, 68, 68);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="CompilerReports">
+            <ui:Foldout text="Compiler Reports">
+                <ui:ScrollView name="Reports" />
+            </ui:Foldout>
+        </ui:VisualElement>
+    </ui:ScrollView>
+</ui:UXML>

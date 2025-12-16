@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Property" style="flex-direction: row; flex-wrap: nowrap; flex-grow: 0;">
+        <ui:GroupBox style="flex-direction: row; border-left-color: rgb(171, 171, 171); border-right-color: rgb(171, 171, 171); border-top-color: rgb(171, 171, 171); border-bottom-color: rgb(171, 171, 171); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 0.5px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; flex-grow: 1; flex-shrink: 0;">
+            <ui:VisualElement style="border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-right-width: 1px; background-color: rgb(67, 67, 67); max-width: 40%; min-width: 40%;">
+                <ui:Label text="Property" display-tooltip-when-elided="true" name="PropertyID" focusable="true" style="width: auto; flex-wrap: wrap; max-width: none; min-width: auto; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgb(188, 188, 188); border-right-color: rgb(188, 188, 188); border-top-color: rgb(188, 188, 188); border-bottom-color: rgb(188, 188, 188); flex-grow: 1; flex-shrink: 0; flex-direction: column; margin-right: 7px; margin-left: 4px; white-space: nowrap; padding-top: 2px; padding-bottom: 2px; color: rgb(231, 231, 231);" />
+            </ui:VisualElement>
+            <ui:VisualElement focusable="true" style="background-color: rgb(77, 77, 77); flex-grow: 1; -unity-font-style: bold; flex-shrink: 0;">
+                <ui:Label text="True" display-tooltip-when-elided="true" name="PropertyValue" enable-rich-text="true" style="width: auto; flex-wrap: wrap; max-width: initial; min-width: initial; background-color: rgba(0, 0, 0, 0); flex-grow: 0; flex-direction: row; margin-left: 5px; padding-top: 2px; padding-bottom: 2px;" />
+            </ui:VisualElement>
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>

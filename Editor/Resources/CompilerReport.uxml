@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="CompilerReport" style="border-left-width: 2px; border-right-width: 1px; border-top-width: 3px; border-bottom-width: 2px; border-left-color: rgb(38, 38, 38); border-right-color: rgb(68, 68, 68); border-top-color: rgb(38, 38, 38); border-bottom-color: rgb(38, 38, 38); padding-bottom: 0;">
+        <ui:VisualElement name="TopBar" style="white-space: normal; flex-direction: row;">
+            <ui:Button text="X" display-tooltip-when-elided="true" name="RemoveButton"/>
+            <ui:VisualElement name="Label" style="border-left-color: rgb(68, 68, 68); border-right-color: rgb(68, 68, 68); border-top-color: rgb(68, 68, 68); border-bottom-color: rgb(68, 68, 68); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; flex-grow: 1;">
+                <ui:Label text="Report Name" display-tooltip-when-elided="true" name="Text" style="background-color: rgb(79, 79, 79); border-left-color: rgb(103, 103, 103); border-right-color: rgb(103, 103, 103); border-top-color: rgb(103, 103, 103); border-bottom-color: rgb(103, 103, 103); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; -unity-text-align: upper-center;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Source" style="flex-direction: row; margin-left: 0;">
+            <ui:VisualElement style="width: 0; height: 0;"/>
+            <ui:Foldout text="Source / Disassembly" name="SourceView" style="flex-grow: 1; margin-left: 0;">
+                <ui:VisualElement name="SourceBG" style="margin-left: -10px; margin-right: 5px; margin-top: 2px; margin-bottom: -2px; border-left-color: rgb(120, 120, 120); border-right-color: rgb(120, 120, 120); border-top-color: rgb(120, 120, 120); border-bottom-color: rgb(120, 120, 120); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; background-color: rgb(43, 43, 43); flex-grow: 1;">
+                    <ui:Label text="#version 300 es  precision highp float; precision highp int; layout(location = 0) out mediump vec4 SV_Target0; void main() {     SV_Target0 = vec4(0.5, 1.0, 0.5, 1.0);     return; }  " display-tooltip-when-elided="true" name="SourceText" style="white-space: normal;"/>
+                </ui:VisualElement>
+            </ui:Foldout>
+        </ui:VisualElement>
+        <ui:VisualElement name="Legend" style="border-left-color: rgb(72, 72, 72); border-right-color: rgb(72, 72, 72); border-top-color: rgb(72, 72, 72); border-bottom-color: rgb(72, 72, 72); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; margin-left: 10px;">
+            <ui:VisualElement name="LegendLabel" style="margin-bottom: 7px;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="Metrics" style="border-left-color: rgb(72, 72, 72); border-right-color: rgb(72, 72, 72); border-top-color: rgb(72, 72, 72); border-bottom-color: rgb(72, 72, 72); border-left-width: 1px; border-right-width: 1px; border-top-width: 0; border-bottom-width: 1px;"/>
+        <ui:VisualElement name="Properties" style="border-left-width: 0; border-right-width: 0; border-bottom-width: 1px; border-left-color: rgb(72, 72, 72); border-right-color: rgb(72, 72, 72); border-top-color: rgb(72, 72, 72); border-bottom-color: rgb(72, 72, 72);">
+            <ui:ScrollView mode="Vertical" horizontal-scroller-visibility="Auto" elasticity="0.22" scroll-deceleration-rate="0.56" name="PropertyView" style="flex-direction: column; flex-grow: 0; margin-top: 4px; padding-bottom: 0;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

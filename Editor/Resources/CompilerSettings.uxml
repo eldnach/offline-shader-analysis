@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="CompilerSettings" style="border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(68, 68, 68); border-right-color: rgb(68, 68, 68); border-top-color: rgb(68, 68, 68); border-bottom-color: rgb(68, 68, 68);">
+        <ui:Foldout text="Compiler Settings" name="CompilerFoldout">
+            <ui:VisualElement name="Compiler" style="flex-direction: row;">
+                <ui:Label text="Compiler" display-tooltip-when-elided="true" name="CompilerLabel" style="flex-basis: 30%; flex-direction: row; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; min-width: auto; width: auto; flex-grow: 0; flex-shrink: 0;" />
+                <ui:DropdownField index="-1" choices="System.Collections.Generic.List`1[System.String]" name="CompilerDrop" style="flex-basis: 70%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="CompilerPath" style="flex-direction: row; flex-shrink: 0;">
+                <ui:Label text="Compiler Path" display-tooltip-when-elided="true" name="CompilerPathLabel" style="flex-basis: 30%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                <ui:Button display-tooltip-when-elided="true" name="CompilerPathDialog" style="flex-wrap: nowrap; flex-shrink: 1; flex-basis: 3%; margin-left: 0; padding-left: 7px; background-image: resource(&apos;file_icon&apos;); -unity-background-scale-mode: scale-to-fit; -unity-slice-left: 3; -unity-slice-top: 3; -unity-slice-right: 3; -unity-slice-bottom: 3; -unity-background-image-tint-color: rgb(255, 255, 255); font-size: 13px; -unity-font-style: bold; padding-top: -18px;" />
+                <ui:TextField picking-mode="Ignore" name="CompilerPathField" style="flex-basis: 67%; margin-left: 0; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; flex-shrink: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="GPU" style="flex-direction: row;">
+                <ui:Label text="GPU" display-tooltip-when-elided="true" name="GPULabel" style="flex-basis: 30%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                <ui:DropdownField index="-1" choices="System.Collections.Generic.List`1[System.String]" name="GPUDrop" style="flex-basis: 70%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="GraphicsAPI" style="flex-direction: row;">
+                <ui:Label text="Graphics API" display-tooltip-when-elided="true" name="GraphicsAPILabel" style="flex-basis: 30%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                <ui:DropdownField index="-1" choices="System.Collections.Generic.List`1[System.String]" name="GraphicsAPIDrop" style="flex-basis: 70%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="BuildTarget" style="flex-direction: row;">
+                <ui:Label text="Build Target" display-tooltip-when-elided="true" name="BuildTargetLabel" style="flex-basis: 30%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                <ui:DropdownField index="-1" choices="System.Collections.Generic.List`1[System.String]" name="BuildTargetDrop" style="flex-basis: 70%; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+            </ui:VisualElement>
+        </ui:Foldout>
+    </ui:VisualElement>
+</ui:UXML>

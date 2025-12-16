@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Metric" style="flex-direction: row; flex-wrap: nowrap; margin-bottom: 0;">
+        <ui:GroupBox style="flex-grow: 1; margin-top: 0;">
+            <ui:Label text="Metric" display-tooltip-when-elided="true" name="MetricLabel" style="width: 30%; flex-wrap: wrap; max-width: 30%; min-width: 30%;" />
+            <ui:GroupBox name="BarGraph" style="flex-grow: 1; background-color: rgb(91, 91, 91); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-left-color: rgb(219, 219, 219); border-right-color: rgb(219, 219, 219); border-top-color: rgb(219, 219, 219); border-bottom-color: rgb(219, 219, 219); flex-direction: row;" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>

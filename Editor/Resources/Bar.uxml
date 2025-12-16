@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Bar" style="background-color: rgba(255, 0, 0, 0); height: auto; width: auto; flex-direction: row; align-items: flex-start; justify-content: flex-start; flex-grow: 1; flex-shrink: 0; border-left-color: rgb(255, 0, 0); border-right-color: rgb(255, 0, 0); border-top-color: rgb(255, 0, 0); border-bottom-color: rgb(255, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; max-width: none; min-width: auto; max-height: none; min-height: auto;">
+        <ui:Label text="1.2" display-tooltip-when-elided="true" name="Label" enable-rich-text="true" style="align-items: auto; justify-content: flex-start; -unity-text-align: upper-center; flex-grow: 1; flex-direction: row; white-space: nowrap; color: rgb(255, 255, 255);" />
+    </ui:VisualElement>
+</ui:UXML>
