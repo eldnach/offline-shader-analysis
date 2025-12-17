@@ -24,25 +24,24 @@ Unity shaders are compiled into thousands of different programs (variants) when 
 
 To start, specify a valid path to the offline shader compiler (MALIOC) and assign a valid Unity Shader for analysis. Configure the Subshader, Pass and Shader Keywords to enable (clicking the little square next to each key). Finally, press "Compile and Report" to analyze the shader.
 
-The package contains a test shader to illusrate the plugin's usage. It incldues 3 custom shader keywords:
+The package contains a test shader to illustrate the plugin's usage. It incldues 3 custom shader keywords:
 
-1. `Z_WRITE`: The shader will manually write to the depth buffer in the pixel stage.
+`Z_WRITE`: The shader will manually write to the depth buffer in the pixel stage. Doing so will disable hidden surface removal optimizations such as early-z, indicated by the late-z test.
 <p align="left">
   <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/Z_WRITE.png?raw=true" alt="Zwrite">
 </p>
-Doing so will disable hidden surface removal optimizations such as early-z, indicated by the late-z test.
 
-2. `STACK_ALLOCATIONS`: The shader will dynamically index into a local array.
+`STACK_ALLOCATIONS`: The shader will dynamically index into a local array. This will force the compiler to allocate memory on the stack (shared memory) rather than shader registers. The shader is bound by load/store operations.
+
 <p align="left">
   <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/STACK_ALLOCATIONS.png?raw=true" alt="StackAllocations">
 </p>
-This will force the compiler to allocate memory on the stack (shared memory) rather than shader registers. The shader is bound by load/store operations.
 
-3. `REGISTER_USAGE`: The shader will execute a large number of complex instructions.
+`REGISTER_USAGE`: The shader will execute a large number of complex instructions. This will increase shader register usage and reduce occupancy. The shader is bound by arithmetic operations.
+
 <p align="left">
   <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/REGISTER_USAGE.png?raw=true" alt="RegiterUsage">
 </p>
-This will increase shader register usage and reduce occupancy. The shader is bound by arithmetic operations.
 
 You can also view the generated shader's source or disassembly:
 <p align="left">
