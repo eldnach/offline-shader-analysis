@@ -3,7 +3,7 @@
 Offline compilation and analysis of ShaderLab and ShaderGraph shaders, using the Mali Offline Shader Compiler.
 
 <p align="center">
-  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/.github/images/OfflineShaderAnalysis.png?raw=true" alt="OfflineShaderAnalysis">
+  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/OfflineShaderAnalysis.png?raw=true" alt="OfflineShaderAnalysis">
 </p>
 
 Additional shader compilers may be supported in the future.
@@ -28,25 +28,25 @@ The package contains a test shader to illusrate the plugin's usage. It incldues 
 
 1. `Z_WRITE`: The shader will manually write to the depth buffer in the pixel stage.
 <p align="left">
-  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/.github/images/Z_WRITE.png?raw=true" alt="Zwrite">
+  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/Z_WRITE.png?raw=true" alt="Zwrite">
 </p>
 Doing so will disable hidden surface removal optimizations such as early-z, indicated by the late-z test.
 
 2. `STACK_ALLOCATIONS`: The shader will dynamically index into a local array.
 <p align="left">
-  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/.github/images/STACK_ALLOCATIONS.png?raw=true" alt="StackAllocations">
+  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/STACK_ALLOCATIONS.png?raw=true" alt="StackAllocations">
 </p>
 This will force the compiler to allocate memory on the stack (shared memory) rather than shader registers. The shader is bound by load/store operations.
 
 3. `REGISTER_USAGE`: The shader will execute a large number of complex instructions.
 <p align="left">
-  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/.github/images/REGISTER_USAGE.png?raw=true" alt="RegiterUsage">
+  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/REGISTER_USAGE.png?raw=true" alt="RegiterUsage">
 </p>
 This will increase shader register usage and reduce occupancy. The shader is bound by arithmetic operations.
 
 You can also view the generated shader's source or disassembly:
 <p align="left">
-  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/.github/images/ShaderSource.png?raw=true" alt="ShaderSource">
+  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/ShaderSource.png?raw=true" alt="ShaderSource">
 </p>
 
 ## Shader Settings
