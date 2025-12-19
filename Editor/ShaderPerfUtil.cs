@@ -325,6 +325,17 @@ public static class ShaderPerfUtil
         
         compiledShader = compileInfo.ShaderData;
 
+        string source = Encoding.UTF8.GetString(compiledShader);
+        int firstNewline = source.IndexOf('\n');
+        int length = (firstNewline == -1) ? compiledShader.Length : firstNewline;
+        string firstLine = Encoding.UTF8.GetString(compiledShader, 0, length).Trim();
+
+        if ((firstNewline != -1) && (firstLine == "#version 300 es"))
+        {
+            string updatedSource = "#version 310 es" + source.Substring(firstNewline);
+            compiledShader = Encoding.UTF8.GetBytes(updatedSource);
+        }
+
         using (FileStream fs = File.Create(compiledShaderPath))
         {
             Debug.Log("Offline Shader Analysis: written compiled shader to " + compiledShaderPath);
