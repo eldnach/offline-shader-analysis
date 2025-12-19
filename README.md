@@ -30,17 +30,26 @@ The package contains a test shader to illustrate the plugin's usage. It incldues
 <p align="left">
   <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/Z_WRITE.png?raw=true" alt="Zwrite">
 </p>
+<p align="left">
+  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/ZWriteMetrics.png?raw=true" alt="ZwriteMetrics">
+</p>
 
 `STACK_ALLOCATIONS`: The shader will dynamically index into a local array. This will force the compiler to allocate memory on the stack (shared memory) rather than shader registers. The shader is bound by load/store operations.
 
 <p align="left">
   <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/STACK_ALLOCATIONS.png?raw=true" alt="StackAllocations">
 </p>
+<p align="left">
+  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/StackAllocationMetrics.png?raw=true" alt="StackAllocationMetrics">
+</p>
 
 `REGISTER_USAGE`: The shader will execute a large number of complex instructions. This will increase shader register usage and reduce occupancy. The shader is bound by arithmetic operations.
 
 <p align="left">
   <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/REGISTER_USAGE.png?raw=true" alt="RegiterUsage">
+</p>
+<p align="left">
+  <img width="100%" src="https://github.com/eldnach/offline-shader-analysis/blob/main/images/RegisterUsageMetrics.png?raw=true" alt="RegisterUsageMetrics">
 </p>
 
 You can also view the generated shader's source or disassembly:
