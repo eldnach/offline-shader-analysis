@@ -1,4 +1,4 @@
-# Unity Shader Performance Metrics
+# Offline Shader Analaysis for Unity
 
 Offline compilation and analysis of ShaderLab and ShaderGraph shaders, using the Mali Offline Shader Compiler.
 
@@ -14,9 +14,9 @@ Supported in Unity 6 LTS and later. Pre-installation of the Mali Offline Shader 
 ## Setup
 1. In the Unity Editor, go to `Window > Package Manager`
 2. On the top left on the Package Manager window, click on `+ > Add package from git URL...` 
-3. Add the following URL "https://github.com/eldnach/unity-shader-perf.git" and click `Add`
+3. Add the following URL "[https://github.com/eldnach/offline-shader-analysis.git](https://github.com/eldnach/offline-shader-analysis.git)" and click `Add`
 
-Once installed, go to `Window > Shader Performance Metrics > Open`.
+Once installed, go to `Window > Analysis > Offline Shader Analysis`.
 
 ## Example usage
 
