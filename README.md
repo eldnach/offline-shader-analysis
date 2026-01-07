@@ -1,4 +1,4 @@
-# Offline Shader Analaysis for Unity
+# Offline Shader Analysis for Unity
 
 Offline compilation and analysis of ShaderLab and ShaderGraph shaders, using the Mali Offline Shader Compiler.
 
