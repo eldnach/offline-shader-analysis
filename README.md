@@ -12,9 +12,9 @@ Additional shader compilers may be supported in the future.
 Supported in Unity 6 LTS and later. Pre-installation of the Mali Offline Shader Compiler is required: https://developer.arm.com/Tools%20and%20Software/Mali%20Offline%20Compiler
 
 ## Setup
-1. In the Unity Editor, go to `Window > Package Manager`
-2. On the top left on the Package Manager window, click on `+ > Add package from git URL...` 
-3. Add the following URL "[https://github.com/eldnach/offline-shader-analysis.git](https://github.com/eldnach/offline-shader-analysis.git)" and click `Add`
+1. Clone this repository
+2. In the Unity Editor, go to `Window > Package Manager`
+3. On the top left on the Package Manager window, click on `+ > Add package from disk` and select the "package.json" file
 
 Once installed, go to `Window > Analysis > Offline Shader Analysis`.
 
